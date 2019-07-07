@@ -29,7 +29,7 @@
         li
           span
             | やったことあるインフラ
-          | AWS(ECS, EC2, RDS, ECR, ALB, route53, cloudwatch) | Terraform | Teleport | Ansible | circleci
+          | AWS(ECS, EC2, RDS, ECR, ALB, route53, cloudwatch) | Terraform | Teleport | Ansible | circleci | gulp
         li
           span
             | 好きな開発環境
@@ -40,8 +40,8 @@
           | Vagrant | Docker | Local
         li
           span
-            | 今興味あること
-          |           Docker | React | Django | Javascript
+            | 今特に勉強していること
+          |  Docker | React | Django | Javascript
     section.sns
       h2 📣 フォロー
       a(href='https://twitter.com/maxyasuda/', target='_blank', rel='noopener')
