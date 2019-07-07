@@ -2,7 +2,7 @@ version: 2.1
 executors:
     my-executor:
         docker:
-          - image: circleci/node:7.10
+          - image: circleci/node:8
 jobs:
     build:
       working_directory: ~/repo
@@ -24,6 +24,9 @@ jobs:
       working_directory: ~/repo
       steps:
           - checkout
+          - restore_cache:
+            keys:
+              - npm-{{ checksum "package.json" }}
           - run: npm install
           - run: |
               npm run generate
