@@ -37,8 +37,6 @@ workflows:
                 branches:
                   ignore: master
           - deploy-prod:
-              requires:
-                - build
               filters:
                 branches:
                   only: master
