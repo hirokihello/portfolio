@@ -1,27 +1,42 @@
 version: 2.1
+executors:
+    my-executor:
+        docker:
+          - image: circleci/node:7.10
 jobs:
-  build:
-    docker:
-      - image: circleci/node:7.10
-    working_directory: ~/repo
-    branches:
-      only:
-        - master
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-      - run: npm install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          command: |
+    build:
+      working_directory: ~/repo
+      executor: my-executor
+      steps:
+          - checkout
+          - restore_cache:
+              keys:
+                - v1-dependencies-{{ checksum "package.json" }}
+                - v1-dependencies-
+          - run: |
+              npm install
+              ls -la
+          - save_cache:
+              paths:
+                - node_modules
+              key: v1-dependencies-{{ checksum "package.json" }}
+    deploy-prod:
+      executor: my-executor
+      working_directory: ~/repo
+      steps:
+        - run: |
             [ -s "$HOME/.nvm/nvm.sh" ] && source "$HOME/.nvm/nvm.sh" && nvm use
             [ ! -d "node_modules" ] && npm install
             npm run generate
             gulp deploy
-            ls -la
+workflows:
+    version: 2
+    build-deploy:
+      jobs:
+          - build
+          - deploy-prod:
+              requires:
+                - build
+              filters:
+                branches:
+                  only: master
