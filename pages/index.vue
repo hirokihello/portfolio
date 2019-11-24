@@ -6,7 +6,7 @@
       p.header-p Engineer
     section.about
       h2 About Me
-      p hirokihelloです。都内の大学に通いながらインフラからフロントまでやってます。
+      p hirokihelloです。都内の大学に通いながらインフラからフロントまでやってます。最近はFARGATEやったりcdkやったりとAWS触ってることが多いです。
     section.profile
       h2 Profile
       ul
