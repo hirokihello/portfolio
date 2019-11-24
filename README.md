@@ -2,6 +2,14 @@
 
 > my portforio
 
+インフラは
+https://github.com/hirokihello/portfolio-infra-terraform (terraform)
+https://github.com/hirokihello/portfolio-infra (cdk)
+
+どちらも
+クラウドはAWS(route53+cloudfront+s3)
+circleCIでデプロイ
+
 ## Build Setup
 
 ``` bash
@@ -18,5 +26,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
