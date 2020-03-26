@@ -7,6 +7,7 @@
     section.about
       h2 About Me
       p hirokihelloです。都内の大学に通いながらインフラからフロントまでやってます。最近はFARGATEやったりcdkやったりとAWS触ってることが多いです。
+      p このサイト自体はnuxt、インフラはterraform版とCDK版の両方がgithubにあるので興味ある人は見てみてください〜
     section.profile
       h2 Profile
       ul
@@ -21,7 +22,7 @@
           | Ruby | javascript | Japanese
         li
           span 好きなフレームワーク
-          | Ruby On Rails | Synatra | Vuejs
+          | Ruby On Rails | Synatra | Vuejs | React
         li
           span
             | お勉強してるやつ
@@ -29,7 +30,7 @@
         li
           span
             | やったことあるインフラ
-          | AWS(ECS, EC2, RDS, ECR, ALB, route53, cloudwatch) | Terraform | Teleport | Ansible | circleci | gulp
+          | AWS(ECS, EC2, RDS, ECR, ALB, route53, cloudwatch, s3...) | Terraform | Teleport | Ansible | circleci | gulp | CDK
         li
           span
             | 好きな開発環境
@@ -41,7 +42,7 @@
         li
           span
             | 今特に勉強していること
-          |  Docker | React | Django | Javascript
+          | Django とか最近やってます
     section.sns
       h2 📣 フォロー
       a(href='https://twitter.com/maxyasuda/', target='_blank', rel='noopener')
