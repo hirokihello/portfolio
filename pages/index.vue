@@ -26,7 +26,7 @@
         li
           span
             | お勉強してるやつ
-          | Python | Django | Nuxtjs | Css | SQL
+          | Python | Django | Nuxtjs | Css | SQL | Flux
         li
           span
             | やったことあるインフラ
