@@ -15,9 +15,11 @@
     "ant-design-vue": "^1.6.2",
     "cross-env": "^5.2.1",
     "express": "^4.16.4",
+    "node-sass": "^4.14.1",
     "nuxt": "^2.13.0",
     "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0"
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.3",

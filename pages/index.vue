@@ -8,12 +8,38 @@
       h2 About Me
       p hirokihelloです。都内の大学に通いながらインフラからフロントまでやってます。最近はFARGATEやったりcdkやったりとAWS触ってることが多いです。
       p このサイト自体はnuxt、インフラはterraform版とCDK版の両方がgithubにあるので興味ある人は見てみてください〜
+    section.portfolio
+      h2 Portfolio
+      ul
+        li
+          a(href="https://github.com/hirokihello/portfolio-infra-terraform")
+            | terraformで作ったこのサイトのインフラ基盤。
+          p
+            | circleciでmasterブランチにpushするだけで簡単にあなたもs3+cloudfrontでhttpsの独自ドメインでサイトが公開できます
+        li
+          a(href="https://github.com/hirokihello/portfolio-infra")
+            | cdkで作ったこのサイトのインフラ基盤。
+          p
+            | terraformのバージョンと全く同じことができます
+        li
+          a(href="https://github.com/hirokihello/hhsh")
+            | ruby製の簡易shell。
+          p
+            | shellの仕組みを知りたくなって自作した。cdやlsなど簡単なコマンドをsystem callを呼び出して実行できる。パイプも一応実装されている。
+            | shellの簡単な動きを知りたい人にはおすすめかもしれないが、学習のためにrubyの原始的なメソッドをわざわざ使ったので読みにくいコードになっている。
+            | いつかリファクタする(多分)
+        li
+          a(href="https://github.com/hirokihello/portfolio")
+            | このサイト本体のスクリプト
+          p
+            | このサイトはnuxtで作られているが1ページしかないのでnuxtを採用している意味は全くない。ドキュメント触るついでにnuxtを採用しただけなのでほとんど手がつけられていない。
+
     section.profile
       h2 Profile
       ul
         li
           span 職業
-          | 大学生：東京大学在学
+          | 大学生：東京大学3年
         li
           span 実務経験
           | 2019/2~ UUUM株式会社 - 社外向けサービスのエンジニアを担当
@@ -59,12 +85,11 @@
 </template>
 
 <script>
-
 export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 body, html {
   font-family: -apple-system,BlinkMacSystemFont,\.SFNSDisplay-Regular,"Noto Sans JP", sans-serif;
   background-color: #fff;

@@ -1,9 +1,10 @@
 # hirokihello-portforio
 
+hirokihellloのportfolioサイト.
+nuxtを使っているが特に使う意味はない。何となく面白そうなので使ってみあt
 > my portforio
 
 インフラは
-
 
 https://github.com/hirokihello/portfolio-infra-terraform (terraform)
 
@@ -17,15 +18,8 @@ circleCIでデプロイ
 
 ``` bash
 # install dependencies
-$ npm run install
+$ make install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+$ make run
 ```
