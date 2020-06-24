@@ -12,23 +12,23 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "ant-design-vue": "^1.1.10",
-    "cross-env": "^5.2.0",
+    "ant-design-vue": "^1.6.2",
+    "cross-env": "^5.2.1",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.13.0",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.27",
+    "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^24.1.0",
+    "babel-jest": "^24.9.0",
     "concurrent-transform": "^1.0.0",
     "gulp": "^4.0.2",
-    "gulp-awspublish": "^4.0.0",
+    "gulp-awspublish": "^4.1.2",
     "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
-    "jest": "^24.1.0",
-    "nodemon": "^1.18.9",
-    "vue-jest": "^3.0.3"
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "vue-jest": "^3.0.5"
   }
 }
