@@ -33,7 +33,6 @@
             | このサイト本体のスクリプト
           p
             | このサイトはnuxtで作られているが1ページしかないのでnuxtを採用している意味は全くない。ドキュメント触るついでにnuxtを採用しただけなのでほとんど手がつけられていない。
-
     section.profile
       h2 Profile
       ul
@@ -141,12 +140,16 @@ a {
 }
 
 .about {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .about > p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+.portfolio {
+  margin-bottom: 30px;
 }
 
 .profile {
