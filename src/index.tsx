@@ -1,6 +1,7 @@
 // import { H2, View, ActionTree } from "../src/dist/index";
 import { H2, ActionTree, View } from "@hirokihello/hydrogen";
 import "./layout/index.scss";
+import profileImage from './static/hiroki.jpg';
 
 type State = typeof state;
 type Actions = typeof actions;
@@ -12,7 +13,7 @@ const actions: ActionTree<State> = {};
 const view: View<State, Actions> = () => {
     const a = (
       <main class="main">
-        <header class="header"><img class="header-img" src="./static/hiroki.jpg" alt="ひろき" />
+        <header class="header"><img class="header-img" src={profileImage} alt="ひろき" />
             <h1 class="header-name">HirokiHello</h1>
             <p class="header-p">Engineer</p>
         </header>

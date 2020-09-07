@@ -42,6 +42,12 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        // 対象となるファイルの拡張子
+        test: /\.(gif|png|jpg|eot|wof|woff|woff2|ttf|svg)$/,
+        // 画像をBase64として取り込む
+        loader: "url-loader"
       }
     ],
   },

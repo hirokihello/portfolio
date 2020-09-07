@@ -35,7 +35,7 @@ gulp.task('deploy', function() {
   // S3 オプションを使用して新しい publisher を作成する
   // http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
   var publisher = awspublish.create(config);
-  var g = gulp.src('./' + config.distDir + '/*(index.html|bundle.js|static/*)');
+  var g = gulp.src('./' + config.distDir + '/*(index.html|bundle.js)');
     // publisher は、上記で指定した Content-Length、Content-Type、および他のヘッダーを追加する
     // 指定しない場合、はデフォルトで x-amz-acl が public-read に設定される
   g = g.pipe(parallelize(publisher.publish(config.headers), config.concurrentUploads))
