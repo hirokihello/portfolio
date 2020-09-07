@@ -19,6 +19,7 @@
     "@hirokihello/hydrogen": "^1.0.7",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.1.0",
+    "concurrent-transform": "^1.0.0",
     "css-loader": "^4.2.2",
     "gulp": "^4.0.2",
     "gulp-awspublish": "^4.1.2",
