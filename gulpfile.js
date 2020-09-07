@@ -24,7 +24,7 @@ var config = {
   headers: { /*'Cache-Control': 'max-age=315360000, no-transform, public',*/ },
 
   // 適切なデフォルト値 - これらのファイル及びディレクトリは gitignore されている
-  distDir: 'dist',
+  distDir: 'src',
   indexRootPath: true,
   cacheFileName: '.awspublish',
   concurrentUploads: 10,
@@ -35,7 +35,7 @@ gulp.task('deploy', function() {
   // S3 オプションを使用して新しい publisher を作成する
   // http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
   var publisher = awspublish.create(config);
-  var g = gulp.src('./' + config.distDir + '/**');
+  var g = gulp.src('./' + config.distDir + '/(index.html|bundle.js])');
     // publisher は、上記で指定した Content-Length、Content-Type、および他のヘッダーを追加する
     // 指定しない場合、はデフォルトで x-amz-acl が public-read に設定される
   g = g.pipe(parallelize(publisher.publish(config.headers), config.concurrentUploads))

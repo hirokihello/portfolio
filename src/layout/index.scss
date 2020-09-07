@@ -1,0 +1,120 @@
+body, html {
+  font-family: -apple-system,BlinkMacSystemFont,\.SFNSDisplay-Regular,"Noto Sans JP", sans-serif;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+a {
+  color: #08c;
+  text-decoration: underline;
+}
+
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-name {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.header-img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.header-p {
+  font-size: 16px;
+  color: #999;
+  line-height: 1;
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+.about > p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.portfolio {
+  margin-bottom: 30px;
+}
+
+.profile {
+  margin-bottom: 50px;
+}
+
+.profile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.profile li > span {
+  color: #999;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.sns {
+  margin-bottom: 60px;
+}
+
+.sns > a {
+  font-size: 32px;
+  color: #333;
+  text-decoration: none;
+  margin-right: 14px;
+  line-height: 1;
+}
+
+.mail {
+  margin-bottom: 60px;
+}
+
+.mail > .adress {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mail > .at {
+  font-size: 12px;
+  color: #999;
+}
+
+.footer > span {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+  display: block;
+}

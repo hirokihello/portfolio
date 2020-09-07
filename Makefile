@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	npm run dev
+	npm run start
 
 .PHONY: install
 install:
