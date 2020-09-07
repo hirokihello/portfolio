@@ -19,24 +19,39 @@ const view: View<State, Actions> = () => {
         </header>
         <section class="about">
             <h2>About Me</h2>
-            <p>hirokihelloです。都内の大学に通いながらインフラからフロントまでやってます。最近はFARGATEやったりcdkやったりとAWS触ってることが多いです。</p>
-            <p>このサイト自体はnuxt、インフラはterraform版とCDK版の両方がgithubにあるので興味ある人は見てみてください〜</p>
+            <p>hirokihelloです。都内の大学に通いながらインフラからフロントまでやってます。最近はjavascript書いてることが多いです。</p>
+            <p>このサイト自体はhydrogenというjsの独自フレームワークにのっけてます。またインフラはCDK版で書かれており、typescriptをフロントからインフラまで採用しています。</p>
         </section>
         <section class="portfolio">
             <h2>Portfolio</h2>
             <ul>
-                <li><a href="https://github.com/hirokihello/portfolio-infra-terraform">terraformで作ったこのサイトのインフラ基盤。</a>
-                    <p>circleciでmasterブランチにpushするだけで簡単にあなたもs3+cloudfrontでhttpsの独自ドメインでサイトが公開できます</p>
+                <li>
+                  <a href="https://github.com/hirokihello/hydrogen">このサイト本体の基盤フレームワーク</a>
+                  <p>hydrogen。このサイト本体の基盤となる独自javascriptフレームワーク。tsで書かれている。v-dom、jsxなどreactの機能を参考に実装した</p>
                 </li>
-                <li><a href="https://github.com/hirokihello/portfolio-infra">cdkで作ったこのサイトのインフラ基盤。</a>
-                    <p>terraformのバージョンと全く同じことができます</p>
+                <li>
+                  <a href="https://github.com/hirokihello/babel-preset-hydrogen">hydrogenのbabel-preset</a>
+                  <p>hydrogenをビルドするために必要な設定をまとめたpreset</p>
                 </li>
-                <li><a href="https://github.com/hirokihello/hhsh">ruby製の簡易shell。</a>
-                    <p>shellの仕組みを知りたくなって自作した。cdやlsなど簡単なコマンドをsystem callを呼び出して実行できる。パイプも一応実装されている。 shellの簡単な動きを知りたい人にはおすすめかもしれないが、学習のためにrubyの原始的なメソッドをわざわざ使ったので読みにくいコードになっている。 いつかリファクタする(多分)
-                    </p>
+                <li>
+                  <a href="https://github.com/hirokihello/portfolio-infra">cdkで作ったこのサイトのインフラ基盤。circleciで自動でdeployするようにしています</a>
+                  <p>circleciでmasterブランチにpushするだけで簡単にあなたもs3+cloudfrontでhttpsの独自ドメインでサイトが公開できます</p>
                 </li>
-                <li><a href="https://github.com/hirokihello/portfolio">このサイト本体のスクリプト</a>
-                    <p>このサイトはnuxtで作られているが1ページしかないのでnuxtを採用している意味は全くない。ドキュメント触るついでにnuxtを採用しただけなのでほとんど手がつけられていない。</p>
+                <li>
+                  <a href="https://github.com/hirokihello/portfolio-infra-terraform">terraformで作ったこのサイトのインフラ基盤。</a>
+                  <p>cdkと全く同じことができます</p>
+                </li>
+                <li>
+                  <a href="https://github.com/hirokihello/hhsh">ruby製の簡易shell。</a>
+                  <p>
+                    shellの仕組みを知りたくなって自作した。
+                    cdやlsなど簡単なコマンドをsystem callを呼び出して実行できる。パイプも一応実装されている。 
+                    shellの簡単な動きを知りたい人にはおすすめかもしれないが、学習のためにrubyの原始的なメソッドをわざわざ使ったので読みにくいコードになっている。 いつかリファクタする(多分)
+                  </p>
+                </li>
+                <li>
+                  <a href="https://github.com/hirokihello/portfolio">このサイト本体のスクリプト</a>
+                  <p>hydrogenで作られている。jsx記法で本体は書かれており、tsを採用している。webpackでbuildして、circleciでデプロイしている</p>
                 </li>
             </ul>
         </section>
@@ -46,12 +61,12 @@ const view: View<State, Actions> = () => {
                 <li><span>職業</span>大学生：東京大学3年</li>
                 <li><span>実務経験</span>2019/2~ UUUM株式会社 - 社外向けサービスのエンジニアを担当</li>
                 <li><span>好きな言語</span>Ruby | javascript | Japanese</li>
-                <li><span>好きなフレームワーク</span>Ruby On Rails | Synatra | Vuejs | React</li>
-                <li><span>お勉強してるやつ</span>Python | Django | Nuxtjs | Css | SQL | Flux</li>
-                <li><span>やったことあるインフラ</span>AWS(ECS, EC2, RDS, ECR, ALB, route53, cloudwatch, s3...) | Terraform | Teleport | Ansible | circleci | gulp | CDK</li>
+                <li><span>好きなフレームワーク</span>hydrogen | Ruby On Rails | Synatra | Vuejs | React</li>
+                <li><span>お勉強してるやつ</span>Flux | css</li>
+                <li><span>やったことあるインフラ</span>AWS(ECS, EC2, RDS, ECR, ALB, route53, cloudwatch, s3...) | Terraform | Teleport | Ansible | circleci | gulp | CDK | nginx | mysql | redis</li>
                 <li><span>好きな開発環境</span>Docker</li>
                 <li><span>やったことある開発環境</span>Vagrant | Docker | Local</li>
-                <li><span>今特に勉強していること</span>Django とか最近やってます</li>
+                <li><span>今特に勉強していること</span>フレームワークなしでの実装にはまってます</li>
             </ul>
         </section>
         <section class="sns">
