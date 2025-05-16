@@ -1,7 +1,8 @@
 # hirokihello-portforio
 
 hirokihellloのportfolioサイト.
-nuxtを使っているが特に使う意味はない。何となく面白そうなので使ってみあt
+nuxtを使っているが特に使う意味はない。何となく面白そうなので使ってみた
+
 > my portforio
 
 インフラは
